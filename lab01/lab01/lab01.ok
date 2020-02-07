@@ -1,0 +1,35 @@
+{
+    "name": "Lab 1",
+    "endpoint": "cal/cs61a/sp20/lab01",
+    "src": [
+        "lab01.py",
+        "lab01_extra.py"
+    ],
+    "tests": {
+        "lab01.py:sum_digits": "doctest",
+        "lab01.py:both_positive": "doctest",
+        "lab01_extra.py:falling": "doctest",
+        "lab01_extra.py:double_eights": "doctest",
+        "tests/truthiness.py": "ok_test",
+        "tests/short-circuit.py": "ok_test",
+        "tests/if-statements.py": "ok_test",
+        "tests/control.py": "ok_test",
+        "tests/clones.py": "ok_test",
+        "tests/debugging-quiz.py": "ok_test"
+    },
+    "default_tests": [
+        "control",
+        "short-circuit",
+        "debugging-quiz",
+        "both_positive",
+        "sum_digits"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "analytics",
+        "unlock",
+        "grading",
+        "backup"
+    ]
+}
