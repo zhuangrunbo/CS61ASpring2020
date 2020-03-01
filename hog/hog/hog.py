@@ -166,9 +166,16 @@ def play(strategy0, strategy1, score0=0, score1=0, dice=six_sided,
             tmp = score0
             score0 = score1
             score1 = tmp
-
+        
         who = other(who)
-    
+
+        
+        def swift():
+            say(score0, score1)
+            return swift
+
+        swift()
+        
     # END PROBLEM 5
     # (note that the indentation for the problem 6 prompt (***YOUR CODE HERE***) might be misleading)
     # BEGIN PROBLEM 6
@@ -260,6 +267,9 @@ def announce_highest(who, prev_high=0, prev_score=0):
     assert who == 0 or who == 1, 'The who argument should indicate a player.'
     # BEGIN PROBLEM 7
     "*** YOUR CODE HERE ***"
+
+    
+    return announce_highest
     # END PROBLEM 7
 
 
@@ -408,5 +418,16 @@ def run(*args):
 
     if args.run_experiments:
         run_experiments()
+
+
+def echo_0(s0, s1):
+     print('*', s0)
+     return echo_0
+def echo_1(s0, s1):
+     print('**', s1)
+     return echo_1
+s0, s1 = play(always_roll(1), always_roll(1), dice=make_test_dice(2), goal=3, say=both(echo_0, echo_1))
+
+
 
 
