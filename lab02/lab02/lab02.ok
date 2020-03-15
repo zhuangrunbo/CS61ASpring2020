@@ -1,0 +1,29 @@
+{
+    "name": "Lab 2",
+    "endpoint": "cal/cs61a/sp20/lab02",
+    "src": [
+        "lab02.py",
+        "lab02_extra.py"
+    ],
+    "tests": {
+        "tests/lambda.py": "ok_test",
+        "tests/hof-wwpd.py": "ok_test",
+        "lab02.py": "doctest",
+        "lab02_extra.py": "doctest"
+    },
+    "default_tests": [
+        "lambda",
+        "hof-wwpd",
+        "lambda_curry2",
+        "count_cond",
+        "both_paths"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "analytics",
+        "unlock",
+        "grading",
+        "backup"
+    ]
+}

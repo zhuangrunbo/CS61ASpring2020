@@ -1,0 +1,3 @@
+'lambda_curry2-correct', (0, 70)
+'count_cond-correct', (512, 70)
+'both_paths-correct', (1024, 70)
