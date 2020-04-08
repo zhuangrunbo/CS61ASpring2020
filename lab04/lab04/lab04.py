@@ -137,20 +137,34 @@ def max_subseq(n, l):
     5
     """
     "*** YOUR CODE HERE ***"
-    def factorial(n):
-        if n == 1:
-            return 1
-        else:
-            return n * factorial(n - 1)
-    
-    def subseq(n, m):
-        return factorial(n)/factorial(m) * factorial(n - m)
+    def get_max_digit(n, l):
+        index = 0
+        resIndex = 0
+        res = 0
+        for c in str(n):
+            if c.isdigit() and index <= len(str(n)) - l:
+                if res < int(c):
+                    res = int(c)
+                    resIndex = index
+            index += 1
+        return res, resIndex
 
-    num_n = len(str(n))
-    num_m = l
-    if num_m > num_n: num_m = num_n
-
+    def rest_n(resIndex):
+        res = 0
+        index = 0
+        for c in str(n):
+            if c.isdigit() and index >= resIndex:
+                res += int(c) * pow(10, len(str(n)) - 1 - index)
+            index += 1
+        return res
+                
     if l == 0:
-        return 0;
+        return 0
+    elif len(str(n)) <= l:
+        return n
     else:
-        return subseq(num_n, num_m) + subseq(num_n, num_m - 1)
+        max_digit, digit_index = get_max_digit(n, l)
+        return max_digit * pow(10, l - 1) + max_subseq(rest_n(digit_index), l - 1)
+
+        
+ 

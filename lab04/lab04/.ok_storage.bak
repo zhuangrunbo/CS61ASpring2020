@@ -1,3 +1,4 @@
 'skip_add-correct', (0, 70)
 'summation-correct', (512, 70)
 'paths-correct', (1024, 70)
+'max_subseq-correct', (1536, 70)
