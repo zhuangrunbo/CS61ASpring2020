@@ -1,0 +1,29 @@
+{
+    "name": "Lab 5",
+    "endpoint": "cal/cs61a/sp20/lab05",
+    "src": [
+        "lab05.py",
+        "lab05_extra.py"
+    ],
+    "tests": {
+        "lab05.py": "doctest",
+        "lab05_extra.py": "doctest",
+        "tests/list-indexing.py": "ok_test"
+    },
+    "default_tests": [
+        "list-indexing",
+        "distance",
+        "closer_city",
+        "check_abstraction",
+        "nut_finder",
+        "sprout_leaves"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}
