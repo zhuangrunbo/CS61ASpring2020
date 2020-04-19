@@ -1,0 +1,6 @@
+p = str["aaa", "bbb"]
+a = "ttt"
+
+p += a
+
+print(p)
