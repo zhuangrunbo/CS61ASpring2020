@@ -1,0 +1,12 @@
+test = [1, 2]
+test2 = [3, 4]
+
+
+#test.append([3])
+#test += test2
+#print(test)
+#print(test+test2)
+
+
+
+

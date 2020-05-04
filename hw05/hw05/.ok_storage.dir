@@ -1,0 +1,4 @@
+'VendingMachine-correct', (0, 70)
+'preorder-correct', (512, 70)
+'store_digits-correct', (1024, 70)
+'generate_paths-correct', (1536, 70)
