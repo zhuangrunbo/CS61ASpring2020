@@ -5,3 +5,4 @@
 'Player.play-correct', (2048, 70)
 'link_to_list-correct', (2560, 70)
 'cumulative_mul-correct', (3072, 70)
+'Link-correct', (3584, 70)
