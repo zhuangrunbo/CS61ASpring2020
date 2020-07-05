@@ -1,0 +1,5 @@
+'insert-correct', (0, 70)
+'insert_into_all-correct', (512, 70)
+'subseqs-correct', (1024, 70)
+'inc_subseqs-correct', (1536, 70)
+'permutations-correct', (2048, 70)
