@@ -107,7 +107,9 @@ class Name(Expr):
         None
         """
         "*** YOUR CODE HERE ***"
-
+        if (env.get(self.string) is not None):  return env.get(self.string)
+        return None
+        
     def __str__(self):
         return self.string
 
