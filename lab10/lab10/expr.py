@@ -175,6 +175,14 @@ class CallExpr(Expr):
         Number(14)
         """
         "*** YOUR CODE HERE ***"
+        priFun = env.get(self.operator.string)
+        localOperands = self.operands.copy()
+        
+        for index, operand in enumerate(localOperands):
+            if type(operand) != Number:
+                localOperands[index] = operand.eval(env);
+
+        return priFun.apply(localOperands)
 
     def __str__(self):
         function = str(self.operator)
