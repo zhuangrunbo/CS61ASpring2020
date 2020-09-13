@@ -29,3 +29,5 @@ CREATE TABLE size_of_dogs AS
   -- SELECT "REPLACE THIS LINE WITH YOUR SOLUTION";
   SELECT name, size from dogs, sizes
   WHERE dogs.height < sizes.max and dogs.height >= sizes.min
+
+-- http://composingprograms.com/pages/43-declarative-programming.html
